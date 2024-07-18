@@ -21,7 +21,7 @@
 
 6. **Spatial pooling location:** `after` (Options: `before`, `after`.)
 
-5. **Local video path:** `./data/llava_video/video-chatgpt/evaluation/Test_Videos/v_Lf_7RurLgp0.mp4`
+5. **Local video path:** `playground/demo/xU25MMA2N4aVtYay.mp4`
 
 To run a demo, execute:
 ```bash
@@ -29,7 +29,10 @@ bash scripts/video/demo/video_demo.sh ${Example model} ${Prompt mode} ${Sampled 
 ```
 Example:
 ```bash
-bash scripts/video/demo/video_demo.sh lmms-lab/LLaVA-NeXT-Video-7B-DPO vicuna_v1 32 2 average after grid True ./data/llava_video/video-chatgpt/evaluation/Test_Videos/v_Lf_7RurLgp0.mp4
+mkdir -p lmms-lab
+git clone https://huggingface.co/lmms-lab/LLaVA-NeXT-Video-7B-DPO lmms-lab/LLaVA-NeXT-Video-7B-DPO
+
+bash scripts/video/demo/video_demo.sh lmms-lab/LLaVA-NeXT-Video-7B-DPO vicuna_v1 vicuna_v1 32 2 average after grid True playground/demo/xU25MMA2N4aVtYay.mp4
 ```
 
 ## Evaluation

@@ -16,7 +16,9 @@ To run a demo, execute:
 ```bash
 # If you find any bug when running the demo, please make sure checkpoint path contains 'qwen'.
 # You can try command like 'mv llava-next-interleave-7b llava-next-interleave-qwen-7b'
-python playground/demo/interleave_demo.py --model_path path/to/ckpt
+git clone https://huggingface.co/lmms-lab/llava-next-interleave-qwen-7b-dpo lmms-lab/llava-next-interleave-qwen-7b-dpo
+
+python playground/demo/interleave_demo.py --model_path lmms-lab/llava-next-interleave-qwen-7b-dpo
 ```
 
 ## Evaluation
