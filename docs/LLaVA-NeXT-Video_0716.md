@@ -17,7 +17,7 @@ The new model achieves the best open-source performance in several video benchma
   mkdir -p lmms-lab
   git clone https://huggingface.co/lmms-lab/LLaVA-NeXT-Video-32B-Qwen lmms-lab/LLaVA-NeXT-Video-32B-Qwen
 
-  bash scripts/video/demo/video_demo.sh lmms-lab/LLaVA-NeXT-Video-32B-Qwen vicuna_v1 32 2 average after grid True playground/demo/xU25MMA2N4aVtYay.mp4
+  bash scripts/video/demo/video_demo.sh lmms-lab/LLaVA-NeXT-Video-32B-Qwen qwen_1_5 32 2 average after grid True playground/demo/xU25MMA2N4aVtYay.mp4
   ```
 
 ### Evaluation Results
